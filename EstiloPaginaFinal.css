@@ -1,0 +1,131 @@
+
+.titulo{
+    color: rgb(252, 250, 250);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+background: url(imagenes/double-bubble-dark.png);
+background-repeat: repeat;
+}
+.menu{
+    list-style: none;  /* quitando biñetas */
+    padding: 0; /* eliminar espacios*/
+    background: #edf2f3; /* abarca el 100% quiero 90%*/
+    width: 90%;     /*  nueva medido con porcentajes ancho máximo 1000 pixeles */
+    max-width:1000px;  /*ancho máximo*/
+   margin:20px auto; /* centrar 20 arriba y abajo */
+}
+.menu li a {  /* para ir a enlaces*/
+    color :rgb(15, 15, 15);
+    text-decoration: none;  /*quitamos en enlace línea que aparece en enlace*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:20px;  /* com son de tipo line */
+    display: block; /* cuando son enlaces se pone block  porque son de tipo en línea*/
+    
+}
+/* se accede a la paseudoclase hover con : */
+.menu li a:hover {
+    background: #735bfc;  /* abarca el 100%*/
+
+}
+
+/* queremos que los elemenot li no abarquen el |00%
+y queremos poner uno al lado del otro */
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+.texto{
+    color: blanchedalmond;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+.tablaC{
+    background: blue;
+    color: white;
+}
+.tablaC2{
+    
+    color: white;
+}
+.fondoTabla{
+   
+    color: rgb(245, 243, 243);
+}
+tr:hover{
+    background: rgb(17, 15, 112);
+}
+table, th, td{
+border: 2px solid rgb(253, 248, 248);
+}
+table{
+    margin: 50px 20px 50px 20px;
+    text-align: left;
+    border:2px solid #ebf0ec;
+}
+td, th{
+    padding: 10px 20px;
+}
+
+
+.formulario {
+    background: #fff;
+    width:500px;
+    margin:20px auto;  /*  con auto centramos horizontalmente*/
+    padding: 20px;
+    border-radius: 5px;  /*redondeando bordes */
+}
+
+/* los inputs son de tipo linea*/
+
+.formulario input{
+   display: block;
+}
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea{
+    width :80%;  /* abarquen 100%  */
+    padding:20px;          /* margen interior hacia todos los lados texto y la caja*/                 
+    margin-bottom: 20px;  /* separen entre los elementos abajo */
+    border-radius: 3px;
+    border:1px solid #226fc1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+   
+}
+
+.formulario textarea{
+    min-height: 120px;
+    max-height: 300px;
+    min-width: 70%; 
+    max-width: 70%;
+
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus,
+.formulario textarea:focus{
+    border:2px solid #4fb560;
+    
+}
+
+.formulario input[type="button"]{
+    width:200px;
+    margin: 0 auto;  /* 0 pixeles arriba y abajo y sea automático para centrarlo */
+    background: none; /* porque le voy a poner un borde*/
+    border: 1px solid #4fb560;
+    color:#080808;
+    padding: 10px;
+   cursor: pointer;  
+   font-size: 16px;
+   
+}
+
+.formulario  input:hover{
+    background: #68cff8;
+    color:rgb(12, 12, 12);
+}
